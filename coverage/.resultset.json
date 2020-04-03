@@ -219,18 +219,99 @@
           null
         ]
       },
-      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/models/mechanic.rb": {
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/spec/features/mechanics/index_spec.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/models/application_record.rb": {
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/spec/features/mechanics/show_spec.rb": {
         "lines": [
           1,
+          null,
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/spec/models/amusement_park_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -240,8 +321,19 @@
           1,
           null,
           1,
-          0,
+          3,
           null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       },
@@ -254,25 +346,8 @@
           null
         ]
       },
-      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/models/mechanic_ride.rb": {
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/controllers/amusement_parks_controller.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/controllers/mechanics_controller.rb": {
-        "lines": [
-          1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
           1,
           1,
           1,
@@ -286,8 +361,42 @@
           1,
           null
         ]
+      },
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/models/mechanic.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/controllers/mechanics_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/danielatkinson/turing/2module/b2-mid-mod/app/models/mechanic_ride.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1585932912
+    "timestamp": 1585933537
   }
 }

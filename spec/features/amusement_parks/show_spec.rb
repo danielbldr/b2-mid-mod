@@ -6,8 +6,8 @@ RSpec.describe 'as a user' do
       amusement_park1 = AmusementPark.create(name: 'Six Flags', admission_price: 50)
 
       ride1 = amusement_park1.rides.create!(name:'Mr. Twister', thrill_rating: 8)
-      ride2 = amusement_park1.rides.create!(name:'Sidebender', thrill_rating: 10)
       ride3 = amusement_park1.rides.create!(name:'Tower of Doom', thrill_rating: 7)
+      ride2 = amusement_park1.rides.create!(name:'Sidebender', thrill_rating: 10)
 
       visit "/amusement_parks/#{amusement_park1.id}"
 
