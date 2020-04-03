@@ -8,7 +8,12 @@ class MechanicsController < ApplicationController
   end
 
   def create
-    MechanicRide.create(mechanic_id: params[:id], ride_id: params[:ride])
-    redirect_back fallback_location: '/mechanics'
+    if MechanicRide.where(mechanic_id: params[:id], ride_id: params[:ride]) != []
+      flash[:notice] = "Mechanic already working on that ride"
+      redirect_back fallback_location: '/mechanics'
+    else
+      MechanicRide.create(mechanic_id: params[:id], ride_id: params[:ride])
+      redirect_back fallback_location: '/mechanics'
+    end
   end
 end
