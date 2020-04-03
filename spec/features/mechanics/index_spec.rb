@@ -10,12 +10,9 @@ RSpec.describe 'as a user' do
 
     expect(page).to have_content("All Mechanics")
     within(".mechanic-info") do
-      expect(page).to have_content(mechanic1.name)
-      expect(page).to have_content(mechanic1.years_of_experience)
-      expect(page).to have_content(mechanic2.name)
-      expect(page).to have_content(mechanic2.years_of_experience)
-      expect(page).to have_content(mechanic3.name)
-      expect(page).to have_content(mechanic3.years_of_experience)
+      expect(page).to have_content("#{mechanic1.name} - #{mechanic1.years_of_experience} years of experience")
+      expect(page).to have_content("#{mechanic2.name} - #{mechanic2.years_of_experience} years of experience")
+      expect(page).to have_content("#{mechanic3.name} - #{mechanic3.years_of_experience} years of experience")
     end
   end
 end
