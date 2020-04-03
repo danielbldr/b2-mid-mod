@@ -14,7 +14,7 @@
       <img src="./assets/0.11.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-04-03T11:16:01-06:00">2020-04-03T11:16:01-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-04-03T11:48:35-06:00">2020-04-03T11:48:35-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.11
+         1.13
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>25</b> files in total.
+    <b>28</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>141</b> relevant lines,
-    <span class="green"><b>141</b> lines covered</span> and
+    <b>159</b> relevant lines,
+    <span class="green"><b>159</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -303,9 +303,9 @@
         <tr class="t-file">
           <td class="strong t-file__name"><a href="#157fb6782bd8ff2f5ba1729a348fbcd7cdf24118" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
           <td class="green strong t-file__coverage">100.0 %</td>
-          <td>7</td>
-          <td>5</td>
-          <td>5</td>
+          <td>9</td>
+          <td>6</td>
+          <td>6</td>
           <td>0</td>
           <td>1.0</td>
           
@@ -336,11 +336,44 @@
         <tr class="t-file">
           <td class="strong t-file__name"><a href="#bd222cd3ae99a864c62bbbd4c6b8078ec0ed1f73" class="src_link" title="spec/models/amusement_park_spec.rb">spec/models/amusement_park_spec.rb</a></td>
           <td class="green strong t-file__coverage">100.0 %</td>
-          <td>26</td>
-          <td>16</td>
-          <td>16</td>
+          <td>32</td>
+          <td>19</td>
+          <td>19</td>
           <td>0</td>
-          <td>1.0</td>
+          <td>1.05</td>
+          
+        </tr>
+      
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#5bbce84c6e33160448c88970eb5b50281d694896" class="src_link" title="spec/models/mechanic_ride_spec.rb">spec/models/mechanic_ride_spec.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>1.4</td>
+          
+        </tr>
+      
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#75aad62c78b0facf33ad2f386f017c675e82cb47" class="src_link" title="spec/models/mechanic_spec.rb">spec/models/mechanic_spec.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>7</td>
+          <td>4</td>
+          <td>4</td>
+          <td>0</td>
+          <td>1.25</td>
+          
+        </tr>
+      
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#b28da2276f0dcbad8d718de6cf19193d7d0742fc" class="src_link" title="spec/models/ride_spec.rb">spec/models/ride_spec.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>1.4</td>
           
         </tr>
       
@@ -3324,8 +3357,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3354,18 +3387,18 @@
 
             
 
-            <code class="ruby">  get &#39;/mechanics&#39;, to: &#39;mechanics#index&#39;</code>
+            <code class="ruby">  get &#39;/&#39;, to: &quot;welcome#index&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="3">
+            
             
 
             
 
-            <code class="ruby">  get &#39;/mechanics/:id&#39;, to: &#39;mechanics#show&#39;</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -3376,18 +3409,18 @@
 
             
 
-            <code class="ruby">  post &#39;/mechanics/:id&#39;, to: &#39;mechanics#create&#39;</code>
+            <code class="ruby">  get &#39;/mechanics&#39;, to: &#39;mechanics#index&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  get &#39;/mechanics/:id&#39;, to: &#39;mechanics#show&#39;</code>
           </li>
         </div>
       
@@ -3398,12 +3431,34 @@
 
             
 
-            <code class="ruby">  get &#39;/amusement_parks/:id&#39;, to: &#39;amusement_parks#show&#39;</code>
+            <code class="ruby">  post &#39;/mechanics/:id&#39;, to: &#39;mechanics#create&#39;</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/amusement_parks/:id&#39;, to: &#39;amusement_parks#show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -4330,8 +4385,8 @@
     
 
     <div class="t-line-summary">
-      <b>16</b> relevant lines.
-      <span class="green"><b>16</b> lines covered</span> and
+      <b>19</b> relevant lines.
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4371,7 +4426,7 @@
 
             
 
-            <code class="ruby">describe &quot;#average_thrill_rating&quot; do</code>
+            <code class="ruby">RSpec.describe AmusementPark do</code>
           </li>
         </div>
       
@@ -4382,18 +4437,18 @@
 
             
 
-            <code class="ruby">  it &#39;can return average thrill rating of an amusement park&#39; do</code>
+            <code class="ruby">  describe &quot;relationships&quot; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    amusement_park1 = AmusementPark.create(name: &#39;Six Flags&#39;, admission_price: 50)</code>
+            <code class="ruby">      it { should have_many :rides }</code>
           </li>
         </div>
       
@@ -4404,18 +4459,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">    ride1 = amusement_park1.rides.create!(name:&#39;Mr. Twister&#39;, thrill_rating: 8)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4426,7 +4481,7 @@
 
             
 
-            <code class="ruby">    ride2 = amusement_park1.rides.create!(name:&#39;Sidebender&#39;, thrill_rating: 10)</code>
+            <code class="ruby">  describe &quot;#average_thrill_rating&quot; do</code>
           </li>
         </div>
       
@@ -4437,12 +4492,23 @@
 
             
 
-            <code class="ruby">    ride3 = amusement_park1.rides.create!(name:&#39;Tower of Doom&#39;, thrill_rating: 7)</code>
+            <code class="ruby">    it &#39;can return average thrill rating of an amusement park&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      amusement_park1 = AmusementPark.create(name: &#39;Six Flags&#39;, admission_price: 50)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -4453,57 +4519,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="12">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(amusement_park1.average_thrill_rating).to eq(0.833e1)</code>
+            <code class="ruby">      ride1 = amusement_park1.rides.create!(name:&#39;Mr. Twister&#39;, thrill_rating: 8)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">      ride2 = amusement_park1.rides.create!(name:&#39;Sidebender&#39;, thrill_rating: 10)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">end</code>
+            
+
+            <code class="ruby">      ride3 = amusement_park1.rides.create!(name:&#39;Tower of Doom&#39;, thrill_rating: 7)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">describe &quot;#sorted_rides&quot; do</code>
           </li>
         </div>
       
@@ -4514,18 +4569,18 @@
 
             
 
-            <code class="ruby">  it &#39;can sort rides alphabetically&#39; do</code>
+            <code class="ruby">      expect(amusement_park1.average_thrill_rating).to eq(0.833e1)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="17">
+            
             
 
             
 
-            <code class="ruby">    amusement_park1 = AmusementPark.create(name: &#39;Six Flags&#39;, admission_price: 50)</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -4536,18 +4591,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="19">
+            
             
 
             
 
-            <code class="ruby">    ride1 = amusement_park1.rides.create!(name:&#39;Mr. Twister&#39;, thrill_rating: 8)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4558,7 +4613,7 @@
 
             
 
-            <code class="ruby">    ride2 = amusement_park1.rides.create!(name:&#39;Sidebender&#39;, thrill_rating: 10)</code>
+            <code class="ruby">  describe &quot;#sorted_rides&quot; do</code>
           </li>
         </div>
       
@@ -4569,7 +4624,7 @@
 
             
 
-            <code class="ruby">    ride3 = amusement_park1.rides.create!(name:&#39;Tower of Doom&#39;, thrill_rating: 7)</code>
+            <code class="ruby">    it &#39;can sort rides alphabetically&#39; do</code>
           </li>
         </div>
       
@@ -4580,7 +4635,7 @@
 
             
 
-            <code class="ruby">    ride4 = amusement_park1.rides.create(name:&#39;Cups&#39;, thrill_rating: 2)</code>
+            <code class="ruby">      amusement_park1 = AmusementPark.create(name: &#39;Six Flags&#39;, admission_price: 50)</code>
           </li>
         </div>
       
@@ -4602,12 +4657,78 @@
 
             
 
-            <code class="ruby">    expect(amusement_park1.sorted_rides).to eq([ride4, ride1, ride2, ride3])</code>
+            <code class="ruby">      ride1 = amusement_park1.rides.create!(name:&#39;Mr. Twister&#39;, thrill_rating: 8)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ride2 = amusement_park1.rides.create!(name:&#39;Sidebender&#39;, thrill_rating: 10)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ride3 = amusement_park1.rides.create!(name:&#39;Tower of Doom&#39;, thrill_rating: 7)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ride4 = amusement_park1.rides.create(name:&#39;Cups&#39;, thrill_rating: 2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(amusement_park1.sorted_rides).to eq([ride4, ride1, ride2, ride3])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
             
             
 
@@ -4618,7 +4739,353 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="5bbce84c6e33160448c88970eb5b50281d694896">
+  <div class="header">
+    <h3>spec/models/mechanic_ride_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe MechanicRide do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;relationships&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should belong_to :mechanic }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should belong_to :ride }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="75aad62c78b0facf33ad2f386f017c675e82cb47">
+  <div class="header">
+    <h3>spec/models/mechanic_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe Mechanic do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;relationships&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should have_many :rides }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="b28da2276f0dcbad8d718de6cf19193d7d0742fc">
+  <div class="header">
+    <h3>spec/models/ride_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe Ride do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;relationships&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should have_many :mechanics }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should belong_to :amusement_park }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
